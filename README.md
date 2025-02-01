@@ -13,6 +13,25 @@ This React Native application demonstrates navigation between pages using button
 - Drawer navigation for seamless transitions
 - Stack navigation for managing screen hierarchy
 
+## Output Screens
+
+![image](https://github.com/user-attachments/assets/b544e011-6034-46c5-af66-fe89fd0d79df)
+
+
+![image](https://github.com/user-attachments/assets/3fd40b37-a73d-4fd5-bccc-10997f9b5524)
+
+![image](https://github.com/user-attachments/assets/44944b40-4c42-401f-8fa3-c0916f9074a5)
+
+
+![image](https://github.com/user-attachments/assets/55ed381a-7fcf-404f-9934-15fd64b49979)
+
+
+![image](https://github.com/user-attachments/assets/2d77850c-a92d-4a25-bb55-609720beebaf)
+
+
+
+
+
 ## Installation
 Follow these steps to set up the project:
 
