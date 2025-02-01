@@ -1,0 +1,49 @@
+// To create sample navigation page use below code in App.js
+
+
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './components/HomeScreen';
+import ProfileScreen from './components/ProfileScreen';
+import DrawerHomePage from './components/DrawerHomePage';
+
+const Stack = createNativeStackNavigator();
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Profile" component={ProfileScreen} />
+        {/* <Stack.Screen name="Drawer" component={DrawerHomePage}/> */}
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+
+
+// below code used to create Drawer and it should be placed in App.js
+
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './components/HomeScreen';
+import ProfileScreen from './components/ProfileScreen';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import AddToCart from './components/AddTocart';
+
+const Drawer = createDrawerNavigator();
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Drawer.Navigator initialRouteName="Home">
+        <Drawer.Screen name="Home" component={HomeScreen} />
+        <Drawer.Screen name="Profile" component={ProfileScreen} />
+        <Drawer.Screen name="Cart" component={AddToCart}/>
+      </Drawer.Navigator>
+    </NavigationContainer>
+  );
+}
